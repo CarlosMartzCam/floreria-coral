@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function InfoFooter() {
   return (
     <>
@@ -35,18 +37,67 @@ export default function InfoFooter() {
           </div>
         </div>
       </section>
-      <footer className="bg-musgo-2 text-papel/80 text-center text-xs py-4">
-        <p>
-          Florería Coral · <span className="font-hand text-lg text-girasol">60 años</span> llevando flores a tu puerta
-        </p>
-        <a
-          href="https://www.facebook.com/CoralArteFloral/?locale=es_LA"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-1 hover:text-coral"
-        >
-          Síguenos en Facebook
-        </a>
+
+      <footer className="bg-musgo-2 text-papel/75 pt-12 pb-6">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <p className="font-display text-lg font-semibold text-papel mb-3">
+              Florería <span className="text-coral">Coral</span>
+            </p>
+            <p className="text-sm leading-relaxed">
+              60 años llevando flores frescas a domicilio en la Ciudad de México.
+            </p>
+          </div>
+
+          <div>
+            <h5 className="font-display text-sm font-semibold text-girasol uppercase tracking-wide mb-3">
+              Catálogo
+            </h5>
+            <ul className="text-sm space-y-2">
+              <li><Link href="/catalogo/arreglos" className="hover:text-coral">Arreglos</Link></li>
+              <li><Link href="/catalogo/ramos" className="hover:text-coral">Ramos</Link></li>
+              <li><Link href="/catalogo/eventos" className="hover:text-coral">Eventos</Link></li>
+              <li><Link href="/catalogo/orquideas" className="hover:text-coral">Orquídeas</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="font-display text-sm font-semibold text-girasol uppercase tracking-wide mb-3">
+              Ayuda
+            </h5>
+            <ul className="text-sm space-y-2">
+              <li><Link href="/nosotros" className="hover:text-coral">Nosotros</Link></li>
+              <li><Link href="/contacto" className="hover:text-coral">Contacto</Link></li>
+              <li>
+                <a
+                  href="https://www.facebook.com/CoralArteFloral/?locale=es_LA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-coral"
+                >
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="font-display text-sm font-semibold text-girasol uppercase tracking-wide mb-3">
+              Contacto
+            </h5>
+            <ul className="text-sm space-y-2">
+              <li>C. Río Lerma 113, Cuauhtémoc, CDMX</li>
+              <li>
+                <a href="tel:5545382287" className="hover:text-coral">55 4538 2287</a>
+              </li>
+              <li>Lun-vie 8:00-20:00 · Sáb-dom 8:00-19:00</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto px-6 mt-10 pt-6 border-t border-papel/10 text-xs text-papel/50 text-center">
+          © {new Date().getFullYear()} Florería Coral. Todos los derechos reservados.
+        </div>
       </footer>
     </>
   );
