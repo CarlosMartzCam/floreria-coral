@@ -5,6 +5,7 @@ import CategoryTags from "@/components/CategoryTags";
 import ProductCard from "@/components/ProductCard";
 import InfoFooter from "@/components/InfoFooter";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import TrustBadges from "@/components/TrustBadges";
 import { products, categories } from "@/data/products";
 
 export default function Home() {
@@ -48,6 +49,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
 
       <section className="max-w-5xl mx-auto px-6 pt-12 pb-4">
         <h2 className="font-display text-2xl font-semibold mb-6">Explora por categoría</h2>
