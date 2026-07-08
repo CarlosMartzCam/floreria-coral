@@ -6,6 +6,7 @@ import ProductCard from "@/components/ProductCard";
 import InfoFooter from "@/components/InfoFooter";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import TrustBadges from "@/components/TrustBadges";
+import OccasionShortcuts from "@/components/OccasionShortcuts";
 import { products, categories } from "@/data/products";
 
 export default function Home() {
@@ -56,6 +57,8 @@ export default function Home() {
         <h2 className="font-display text-2xl font-semibold mb-6">Explora por categoría</h2>
         <CategoryTags />
       </section>
+
+      <OccasionShortcuts />
 
       <section className="max-w-5xl mx-auto px-6 py-10">
         <h2 className="font-display text-2xl font-semibold mb-6">Destacados</h2>
