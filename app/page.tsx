@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Nav />
 
-      <section className="bg-papel text-tinta py-16 md:py-20 border-b border-tinta/10">
+      <section className="bg-white text-tinta py-16 md:py-20 border-b border-tinta/10">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="font-display text-4xl md:text-5xl font-semibold leading-tight max-w-md">

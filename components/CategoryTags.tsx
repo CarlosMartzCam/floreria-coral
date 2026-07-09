@@ -18,7 +18,7 @@ export default function CategoryTags({ active }: { active?: string }) {
               transition-transform hover:-translate-y-0.5
               ${isActive
                 ? "bg-coral text-papel border-coral-dark before:bg-coral"
-                : "bg-papel text-tinta border-tinta before:bg-papel"}`}
+                : "bg-white text-tinta border-tinta before:bg-white"}`}
           >
             {cat.label}
           </Link>

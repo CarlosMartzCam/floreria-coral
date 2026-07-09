@@ -2,7 +2,7 @@ const STARS = "★★★★★";
 
 export default function TrustBadges() {
   return (
-    <section className="bg-papel py-10 border-b border-tinta/10">
+    <section className="bg-white py-10 border-b border-tinta/10">
       <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div>
           <p className="font-display text-2xl font-semibold text-coral">60 años</p>

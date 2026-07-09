@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function InfoFooter() {
   return (
     <>
-      <section className="bg-papel text-tinta py-12 border-t border-tinta/10">
+      <section className="bg-white text-tinta py-12 border-t border-tinta/10">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h4 className="font-display font-semibold text-sm text-musgo uppercase tracking-wide mb-2">
