@@ -16,13 +16,13 @@ export default function Home() {
     <>
       <Nav />
 
-      <section className="bg-musgo text-papel py-16 md:py-20">
+      <section className="bg-papel text-tinta py-16 md:py-20 border-b border-tinta/10">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="font-display text-4xl md:text-5xl font-semibold leading-tight max-w-md">
               Flores recién cortadas, listas para <span className="text-coral">regalar</span>
             </h1>
-            <p className="mt-4 text-papel/70 max-w-sm">
+            <p className="mt-4 text-tinta/70 max-w-sm">
               Ramos, arreglos y más, hechos a mano en CDMX. Elige tu favorito y pídelo
               directo por WhatsApp.
             </p>
@@ -36,15 +36,15 @@ export default function Home() {
             >
               Ver catálogo
             </Link>
-            <p className="mt-5 text-xs text-papel/60">
+            <p className="mt-5 text-xs text-tinta/50">
               60 años cultivando flores en la ciudad
             </p>
           </div>
           <div className="relative h-72 hidden md:block">
-            <div className="absolute w-56 h-64 top-0 left-8 rotate-[-4deg] shadow-2xl rounded overflow-hidden z-20">
-              <Image src="/fotos/arreglo/arreglo-01.jpg" alt="" fill className="object-cover" />
+            <div className="absolute w-56 h-64 top-0 left-8 rotate-[-4deg] shadow-xl rounded overflow-hidden z-20">
+              <Image src="/fotos/arreglo/arreglo-02.jpg" alt="" fill className="object-cover" />
             </div>
-            <div className="absolute w-48 h-56 top-14 right-0 rotate-[6deg] shadow-2xl rounded overflow-hidden z-10">
+            <div className="absolute w-48 h-56 top-14 right-0 rotate-[6deg] shadow-xl rounded overflow-hidden z-10">
               <Image src="/fotos/ramo/ramo-01.jpg" alt="" fill className="object-cover" />
             </div>
           </div>

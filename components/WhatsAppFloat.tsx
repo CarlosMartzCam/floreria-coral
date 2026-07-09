@@ -3,7 +3,7 @@ import { whatsappLink } from "@/lib/whatsapp";
 export default function WhatsAppFloat() {
   return (
     <a
-      href={whatsappLink("Hola, quisiera hacer un pedido en Florería Coral.")}
+      href={whatsappLink("Hola, quisiera hacer un pedido en Coral arte floral.")}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-coral text-papel

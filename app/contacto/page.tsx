@@ -20,7 +20,7 @@ export default function ContactoPage() {
           respondemos lo antes posible.
         </p>
         <a
-          href={whatsappLink("Hola, quisiera más información sobre Florería Coral.")}
+          href={whatsappLink("Hola, quisiera más información sobre Coral arte floral.")}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-coral hover:bg-coral-dark text-papel font-medium
@@ -48,7 +48,7 @@ export default function ContactoPage() {
       <section className="max-w-5xl mx-auto px-6 pb-16">
         <div className="rounded-lg overflow-hidden border border-tinta/10 h-80">
           <iframe
-            title="Ubicación de Florería Coral"
+            title="Ubicación de Coral arte floral"
             src={MAPS_EMBED_SRC}
             width="100%"
             height="100%"

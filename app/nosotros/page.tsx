@@ -16,7 +16,7 @@ export default function NosotrosPage() {
       <section className="max-w-5xl mx-auto px-6 pt-12 pb-8">
         <h1 className="font-display text-3xl font-semibold mb-3">Nosotros</h1>
         <p className="text-tinta/70 max-w-xl">
-          Florería Coral tiene <span className="text-coral font-medium">60 años</span> llevando
+          Coral arte floral tiene <span className="text-coral font-medium">60 años</span> llevando
           flores frescas a la ciudad. Generación tras generación, seguimos haciendo ramos y
           arreglos a mano, con el mismo cariño de siempre.
         </p>
@@ -26,7 +26,7 @@ export default function NosotrosPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {localPhotos.map((src) => (
             <div key={src} className="relative h-40 rounded-lg overflow-hidden">
-              <Image src={src} alt="Florería Coral" fill className="object-cover" />
+              <Image src={src} alt="Coral arte floral" fill className="object-cover" />
             </div>
           ))}
         </div>

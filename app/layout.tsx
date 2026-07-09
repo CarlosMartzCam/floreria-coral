@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Florería Coral — Flores frescas en CDMX",
+  title: "Coral arte floral — Flores frescas en CDMX",
   description:
     "Ramos, arreglos, eventos y orquídeas. 60 años llevando flores a domicilio. Pide directo por WhatsApp.",
 };

@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function InfoFooter() {
   return (
     <>
-      <section className="bg-musgo text-papel py-12">
+      <section className="bg-papel text-tinta py-12 border-t border-tinta/10">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h4 className="font-display font-semibold text-sm text-girasol uppercase tracking-wide mb-2">
+            <h4 className="font-display font-semibold text-sm text-musgo uppercase tracking-wide mb-2">
               Horario
             </h4>
-            <p className="text-sm text-papel/80 leading-relaxed">
+            <p className="text-sm text-tinta/70 leading-relaxed">
               Lunes a viernes: <span className="text-coral font-medium">8:00 – 20:00</span><br />
               Sábados y domingos: <span className="text-coral font-medium">8:00 – 19:00</span><br />
               13 y 14 de febrero: <span className="text-coral font-medium">abierto 24 horas</span><br />
@@ -17,19 +17,19 @@ export default function InfoFooter() {
             </p>
           </div>
           <div>
-            <h4 className="font-display font-semibold text-sm text-girasol uppercase tracking-wide mb-2">
+            <h4 className="font-display font-semibold text-sm text-musgo uppercase tracking-wide mb-2">
               Formas de pago
             </h4>
-            <p className="text-sm text-papel/80 leading-relaxed">
+            <p className="text-sm text-tinta/70 leading-relaxed">
               Aceptamos <span className="text-coral font-medium">tarjeta</span> y{" "}
               <span className="text-coral font-medium">efectivo</span>.
             </p>
           </div>
           <div>
-            <h4 className="font-display font-semibold text-sm text-girasol uppercase tracking-wide mb-2">
+            <h4 className="font-display font-semibold text-sm text-musgo uppercase tracking-wide mb-2">
               Entregas a domicilio
             </h4>
-            <p className="text-sm text-papel/80 leading-relaxed">
+            <p className="text-sm text-tinta/70 leading-relaxed">
               Dentro de la colonia: <span className="text-coral font-medium">sin costo</span>.<br />
               Fuera de la colonia: costo según la zona.<br />
               Entregas el <span className="text-coral font-medium">mismo día</span>.
@@ -38,11 +38,11 @@ export default function InfoFooter() {
         </div>
       </section>
 
-      <footer className="bg-musgo-2 text-papel/75 pt-12 pb-6">
+      <footer className="bg-white text-tinta/75 pt-12 pb-6 border-t border-tinta/10">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <p className="font-display text-lg font-semibold text-papel mb-3">
-              Florería <span className="text-coral">Coral</span>
+            <p className="font-display text-lg font-semibold text-tinta mb-3">
+              Coral <span className="text-coral">arte floral</span>
             </p>
             <p className="text-sm leading-relaxed">
               60 años llevando flores frescas a domicilio en la Ciudad de México.
@@ -50,7 +50,7 @@ export default function InfoFooter() {
           </div>
 
           <div>
-            <h5 className="font-display text-sm font-semibold text-girasol uppercase tracking-wide mb-3">
+            <h5 className="font-display text-sm font-semibold text-musgo uppercase tracking-wide mb-3">
               Catálogo
             </h5>
             <ul className="text-sm space-y-2">
@@ -62,7 +62,7 @@ export default function InfoFooter() {
           </div>
 
           <div>
-            <h5 className="font-display text-sm font-semibold text-girasol uppercase tracking-wide mb-3">
+            <h5 className="font-display text-sm font-semibold text-musgo uppercase tracking-wide mb-3">
               Ayuda
             </h5>
             <ul className="text-sm space-y-2">
@@ -82,7 +82,7 @@ export default function InfoFooter() {
           </div>
 
           <div>
-            <h5 className="font-display text-sm font-semibold text-girasol uppercase tracking-wide mb-3">
+            <h5 className="font-display text-sm font-semibold text-musgo uppercase tracking-wide mb-3">
               Contacto
             </h5>
             <ul className="text-sm space-y-2">
@@ -95,8 +95,8 @@ export default function InfoFooter() {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto px-6 mt-10 pt-6 border-t border-papel/10 text-xs text-papel/50 text-center">
-          © {new Date().getFullYear()} Florería Coral. Todos los derechos reservados.
+        <div className="max-w-5xl mx-auto px-6 mt-10 pt-6 border-t border-tinta/10 text-xs text-tinta/40 text-center">
+          © {new Date().getFullYear()} Coral arte floral. Todos los derechos reservados.
         </div>
       </footer>
     </>
