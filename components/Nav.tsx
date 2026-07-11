@@ -15,7 +15,7 @@ export default function Nav() {
           className="flex items-center gap-2 font-display text-2xl font-semibold text-tinta"
           onClick={() => setOpen(false)}
         >
-          <Image src="/logo/logo-header.png" alt="Coral arte floral" width={44} height={20} className="h-8 w-auto" />
+          <Image src="/logo/logo-header.png" alt="Coral arte floral" width={176} height={80} className="h-8 w-auto" priority />
           Coral <span className="text-coral">arte floral</span>
         </Link>
 
