@@ -30,8 +30,8 @@ export default function InfoFooter() {
               Entregas a domicilio
             </h4>
             <p className="text-sm text-tinta/70 leading-relaxed">
-              Dentro de la colonia: <span className="text-coral font-medium">sin costo</span>.<br />
-              Fuera de la colonia: costo según la zona.<br />
+              Envío gratis en la <span className="text-coral font-medium">Col. Cuauhtémoc</span>.<br />
+              Fuera de la colonia: costo accesible según la zona.<br />
               Entregas el <span className="text-coral font-medium">mismo día</span>.
             </p>
           </div>

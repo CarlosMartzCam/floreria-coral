@@ -16,7 +16,7 @@ export default function TrustBadges() {
         </div>
         <div>
           <p className="font-display text-2xl font-semibold text-coral">Mismo día</p>
-          <p className="text-sm text-tinta/70 mt-1">entrega a domicilio, sin costo dentro de la colonia</p>
+          <p className="text-sm text-tinta/70 mt-1">envío gratis en la Col. Cuauhtémoc, costo accesible al resto de la CDMX</p>
         </div>
       </div>
     </section>
