@@ -47,6 +47,13 @@ function buildRange(prefix: string, category: string, count: number): Product[] 
     }));
 }
 
+// Agrega aquí el nombre real de cada producto, usando su id (ej. "arreglo-02", "ramo-01").
+// Los que no tengan entrada aquí siguen mostrando el nombre genérico ("Arreglo 02", etc.)
+const productNames: Record<string, string> = {
+  // "arreglo-02": "Arreglo Tropical Coral",
+  // "ramo-01": "Ramo de Rosas Rojas",
+};
+
 // Agrega aquí la descripción de cada producto, usando su id (ej. "arreglo-02", "ramo-01").
 // Los que no tengan entrada aquí simplemente no muestran descripción en su página.
 const productDescriptions: Record<string, string> = {
@@ -59,4 +66,8 @@ export const products: Product[] = [
   ...buildRange("ramo", "ramos", 15), // ajusta el 15 si al final tienes más fotos de ramo
   ...buildRange("tulipanes", "tulipanes", 7),
   ...buildRange("orquideas", "orquideas", 2),
-].map((p) => ({ ...p, description: productDescriptions[p.id] }));
+].map((p) => ({
+  ...p,
+  name: productNames[p.id] ?? p.name,
+  description: productDescriptions[p.id],
+}));
