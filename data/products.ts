@@ -7,8 +7,9 @@ export type Category = {
 export const categories: Category[] = [
   { slug: "arreglos", label: "Arreglos", hasPhotos: true },
   { slug: "ramos", label: "Ramos", hasPhotos: true },
+  { slug: "tulipanes", label: "Tulipanes", hasPhotos: true },
+  { slug: "orquideas", label: "Orquídeas", hasPhotos: true },
   { slug: "eventos", label: "Eventos", hasPhotos: false },
-  { slug: "orquideas", label: "Orquídeas", hasPhotos: false },
 ];
 
 export type Product = {
@@ -25,6 +26,13 @@ export type Product = {
 
 const EXCLUDED_ARREGLOS = new Set(["01", "03", "06", "08", "11"]);
 
+const DISPLAY_NAMES: Record<string, string> = {
+  arreglo: "Arreglo",
+  ramo: "Ramo",
+  tulipanes: "Tulipán",
+  orquideas: "Orquídea",
+};
+
 function buildRange(prefix: string, category: string, count: number): Product[] {
   return Array.from({ length: count }, (_, i) => {
     const n = String(i + 1).padStart(2, "0");
@@ -33,7 +41,7 @@ function buildRange(prefix: string, category: string, count: number): Product[] 
     .filter((item) => item.valid)
     .map(({ n }) => ({
       id: `${prefix}-${n}`,
-      name: `${prefix === "arreglo" ? "Arreglo" : "Ramo"} ${n}`,
+      name: `${DISPLAY_NAMES[prefix] ?? prefix} ${n}`,
       category,
       image: `/fotos/${prefix}/${prefix}-${n}.jpg`,
     }));
@@ -49,4 +57,6 @@ const productDescriptions: Record<string, string> = {
 export const products: Product[] = [
   ...buildRange("arreglo", "arreglos", 52),
   ...buildRange("ramo", "ramos", 15), // ajusta el 15 si al final tienes más fotos de ramo
+  ...buildRange("tulipanes", "tulipanes", 7),
+  ...buildRange("orquideas", "orquideas", 2),
 ].map((p) => ({ ...p, description: productDescriptions[p.id] }));
