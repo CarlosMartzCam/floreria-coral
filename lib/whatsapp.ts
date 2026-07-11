@@ -1,5 +1,5 @@
 // Reemplaza con el número real de WhatsApp de la floristería, formato internacional sin '+' ni espacios
-export const WHATSAPP_NUMBER = "5215500000000";
+export const WHATSAPP_NUMBER = "5215545382287";
 
 export function whatsappLink(message: string) {
   const encoded = encodeURIComponent(message);
