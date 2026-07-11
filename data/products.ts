@@ -16,6 +16,7 @@ export type Product = {
   name: string;
   category: string; // matches Category.slug
   image: string; // path under /public
+  description?: string; // texto breve para la página individual del producto
 };
 
 // Generado a partir de las fotos ya nombradas: arreglo-01..52, ramo-01..15+
@@ -38,7 +39,14 @@ function buildRange(prefix: string, category: string, count: number): Product[] 
     }));
 }
 
+// Agrega aquí la descripción de cada producto, usando su id (ej. "arreglo-02", "ramo-01").
+// Los que no tengan entrada aquí simplemente no muestran descripción en su página.
+const productDescriptions: Record<string, string> = {
+  // "arreglo-02": "Arreglo tropical con girasoles, rosas y flores de temporada.",
+  // "ramo-01": "Ramo de rosas rojas con follaje verde, ideal para aniversarios.",
+};
+
 export const products: Product[] = [
   ...buildRange("arreglo", "arreglos", 52),
   ...buildRange("ramo", "ramos", 15), // ajusta el 15 si al final tienes más fotos de ramo
-];
+].map((p) => ({ ...p, description: productDescriptions[p.id] }));

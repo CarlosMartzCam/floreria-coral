@@ -40,6 +40,9 @@ export default function ProductoPage({ params }: { params: { id: string } }) {
               {category?.label}
             </p>
             <h1 className="font-display text-3xl font-semibold mb-4">{product.name}</h1>
+            {product.description && (
+              <p className="text-tinta/70 text-sm mb-4">{product.description}</p>
+            )}
             <p className="text-tinta/70 text-sm mb-6">
               Consulta disponibilidad y precio directo por WhatsApp. Si quieres, agrega una
               dedicatoria para incluirla en tu pedido.
