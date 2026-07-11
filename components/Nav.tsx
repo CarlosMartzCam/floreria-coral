@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Nav() {
@@ -9,7 +10,12 @@ export default function Nav() {
   return (
     <nav className="bg-white border-b border-tinta/10 py-4 relative">
       <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="font-display text-2xl font-semibold text-tinta" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-display text-2xl font-semibold text-tinta"
+          onClick={() => setOpen(false)}
+        >
+          <Image src="/logo/logo-header.png" alt="Coral arte floral" width={44} height={20} className="h-8 w-auto" />
           Coral <span className="text-coral">arte floral</span>
         </Link>
 
