@@ -5,8 +5,9 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { slug: "arreglos", label: "Arreglos", hasPhotos: true },
   { slug: "ramos", label: "Ramos", hasPhotos: true },
+  { slug: "arreglos", label: "Arreglos", hasPhotos: true },
+  { slug: "buchones", label: "Ramos Buchones", hasPhotos: true },
   { slug: "tulipanes", label: "Tulipanes", hasPhotos: true },
   { slug: "orquideas", label: "Orquídeas", hasPhotos: true },
   { slug: "eventos", label: "Eventos", hasPhotos: false },
@@ -27,8 +28,9 @@ export type Product = {
 const EXCLUDED_ARREGLOS = new Set(["01", "03", "06", "08", "11"]);
 
 const DISPLAY_NAMES: Record<string, string> = {
-  arreglo: "Arreglo",
   ramo: "Ramo",
+  arreglo: "Arreglo",
+  buchon: "Ramo Buchón",
   tulipanes: "Tulipán",
   orquideas: "Orquídea",
 };
