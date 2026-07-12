@@ -182,8 +182,9 @@ const productDescriptions: Record<string, string> = {
 };
 
 export const products: Product[] = [
+  ...buildRange("ramo", "ramos", 14),
   ...buildRange("arreglo", "arreglos", 49),
-  ...buildRange("ramo", "ramos", 14), // ajusta el 15 si al final tienes más fotos de ramo
+  ...buildRange("buchon", "buchones", 15),
   ...buildRange("tulipanes", "tulipanes", 7),
   ...buildRange("orquideas", "orquideas", 2),
 ].map((p) => ({
