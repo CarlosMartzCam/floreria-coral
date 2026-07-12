@@ -58,6 +58,7 @@ const productNames: Record<string, string> = {
 // Agrega aquí la descripción de cada producto, usando su id (ej. "arreglo-02", "ramo-01").
 // Los que no tengan entrada aquí simplemente no muestran descripción en su página.
 const productDescriptions: Record<string, string> = {
+  "arreglo-02": "Un diseño clásico que celebra los colores de la naturaleza. Este arreglo combina la elegancia de una rosa blanca central con la energía y calidez de crisantemos y margaritas en tonos amarillos y magenta, complementados con delicado follaje de nube (gypsophila). Todo presentado en una hermosa base de mimbre tradicional, ideal para celebrar cumpleaños, enviar agradecimientos o llenar de vida cualquier espacio.",
   // "arreglo-02": "Arreglo tropical con girasoles, rosas y flores de temporada.",
   // "ramo-01": "Ramo de rosas rojas con follaje verde, ideal para aniversarios.",
 };
